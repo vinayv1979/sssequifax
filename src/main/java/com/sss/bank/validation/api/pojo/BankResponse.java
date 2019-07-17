@@ -18,6 +18,8 @@ public class BankResponse implements Serializable{
 	public void setValid(String valid) {
 		this.valid = valid;
 	}
+	
+	@JsonIgnore
 	public String getBankname() {
 		return bankname;
 	}
@@ -30,6 +32,8 @@ public class BankResponse implements Serializable{
 	private String bankname;
 	 @JsonIgnore
 	private String address;
+	 
+	 @JsonIgnore 
 	public String getAddress() {
 		return address;
 	}
