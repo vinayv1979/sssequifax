@@ -34,7 +34,7 @@ public class SSSEquifaxController {
 		String sc = sortcode.replaceAll("\\s", "");
 		String ac = account.replaceAll("\\s", "");
 
-		if (StringUtils.hasText(sc) && sc.length() != 0) {
+		if (StringUtils.hasText(sc) && (sc.length() != 0 && sc.length() >=6 )) {
 
 			if (StringUtils.hasText(ac) && ac.length() != 0) {
 
