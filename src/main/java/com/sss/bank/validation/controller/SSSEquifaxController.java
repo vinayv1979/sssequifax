@@ -41,11 +41,14 @@ public class SSSEquifaxController {
 				valid = bankValidationSrvIntf.validate(sortcode, account);
 
 			} else {
-				throw new ModCheckValidationException("Input not correct or null");
+				throw new ModCheckValidationException("Account not correct or null");
 
 			}
-			throw new ModCheckValidationException("Input not correct or null");
+			
 
+		} else {
+			throw new ModCheckValidationException("Sortcode not correct or null");
+			
 		}
 
 		if (valid.equals(true)) {
